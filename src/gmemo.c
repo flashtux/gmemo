@@ -258,7 +258,7 @@ void gmemo_init()
     /* create gmemo log file */
     sprintf(log_filename, "%s/.gmemo/" GMEMO_LOG_NAME, home_dir);
 
-    /* ceate gmemo hoe dire if doesn't exist */
+    /* ceate gmemo home dire if doesn't exist */
     if(!exist_directory(gmemo_home_dir))
         create_directory(gmemo_home_dir);
     
