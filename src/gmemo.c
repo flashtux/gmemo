@@ -43,6 +43,12 @@
 #include <stdio.h>
 #include <string.h>
 
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <dirent.h>
+
+#include <errno.h>
+                                                                                                                            
 #include <gtk/gtk.h>
 
 #include "gmemo.h"
@@ -174,7 +180,7 @@ void *xmalloc(size_t size) {
   if(tmp == NULL)
     {
 
-      GMEMO_ERROR("gmemo: Virtual memory exhausted\n");
+      GMEMO_ERROR("Virtual memory exhausted\n");
       gmemo_exit(EXIT_FAILURE);
 
     }
@@ -184,9 +190,39 @@ void *xmalloc(size_t size) {
 }
 
 /*
+ * exist_directory
+ */
+gboolean exist_directory(const char *dirname)
+{
+
+  return opendir(dirname) != NULL;
+
+}
+
+/*
+ * create_directory
+ */
+void create_directory(const char *dirname)
+{
+
+  int return_code = mkdir(dirname, 0755);
+  extern int errno;
+
+  if (return_code < 0)
+    {
+      if (errno != EEXIST)
+        {
+          GMEMO_ERROR("can't create directory '%s'.\n", dirname);
+          gmemo_exit(EXIT_FAILURE);
+        }
+    }
+
+}
+
+
+/*
  * gmemo_init: init gmemo with default values and open log file
  */
-
 void gmemo_init()
 {
     gint    i;
@@ -221,6 +257,10 @@ void gmemo_init()
     
     /* create gmemo log file */
     sprintf(log_filename, "%s/.gmemo/" GMEMO_LOG_NAME, home_dir);
+
+    /* ceate gmemo hoe dire if doesn't exist */
+    if(!exist_directory(gmemo_home_dir))
+        create_directory(gmemo_home_dir);
     
     gmemo_log_file = fopen(log_filename, "w+");
     if (gmemo_log_file == NULL)
