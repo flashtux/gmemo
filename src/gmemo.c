@@ -165,6 +165,25 @@ gchar           feast[12][31][128];
 
 
 /*
+ * xmalloc: an malloc interface
+ */
+void *xmalloc(size_t size) {
+
+  void *tmp=malloc(size);
+
+  if(tmp == NULL)
+    {
+
+      GMEMO_ERROR("gmemo: Virtual memory exhausted\n");
+      gmemo_exit(EXIT_FAILURE);
+
+    }
+
+  return tmp;
+
+}
+
+/*
  * gmemo_init: init gmemo with default values and open log file
  */
 
