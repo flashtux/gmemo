@@ -23,14 +23,17 @@
 #include <stdio.h>
 #include <gtk/gtk.h>
 
+#include <stdio.h>
+#include <locale.h>
+#include <libintl.h>
+
+#define PACKAGE "gmemo"
+#define _(string) gettext(string)
+#define N_(string) (string)
+
 
 // debug mode, 0 for normal use, 1 or 2 for developers (2 = full debug messages)
 #define DEBUG               0
-
-// internationalization
-#define _(String) gettext (String)
-#define gettext_noop(String) String
-#define N_(String) gettext_noop (String)
 
 // log filename
 

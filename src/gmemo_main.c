@@ -201,11 +201,9 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR szCmdLine,
      int main (int argc, char *argv[])
 #endif
 {
-  // gtk2.0: gdk_draw_layout () et pango_layout_new pour faire le layout...
-
-  // Initialize the i18n stuff
-  //bindtextdomain (PACKAGE, GNOMELOCALEDIR);
-  //textdomain (PACKAGE);
+    setlocale (LC_ALL, "");
+    bindtextdomain (PACKAGE, "/usr/share/locale");
+    textdomain (PACKAGE);
     
 #ifdef _WIN32
   explode_args_win32(szCmdLine);
