@@ -26,11 +26,14 @@ gmemo_SOURCES = \
     gmemo_memo.c \
     gmemo_loadsave.c \
     gmemo_display.c \
+    getopt.c \
+    getopt1.c \
     gmemo.h \
     gmemo_feast.h \
     gmemo_memo.h \
     gmemo_loadsave.h \
     gmemo_display.h \
+    getopt.h \
     cle_petite.xpm \
     gmemo_feasts.xml \
     gmemo.xml \
@@ -48,11 +51,14 @@ gmemo_gnome_SOURCES = \
     gmemo_memo.c \
     gmemo_loadsave.c \
     gmemo_display.c \
+    getopt.c \
+    getopt1.c \
     gmemo.h \
     gmemo_feast.h \
     gmemo_memo.h \
     gmemo_loadsave.h \
     gmemo_display.h \
+    getopt.h \
     GNOME_GmemoApplet.server \
     GNOME_GmemoApplet.xml
 

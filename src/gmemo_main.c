@@ -24,7 +24,7 @@
 #endif
 
 #ifdef _WIN32
-    #include <windows.h>
+#include <windows.h>
 #endif
 
 #include <stdlib.h>
@@ -36,6 +36,8 @@
 #include "gmemo_memo.h"
 #include "gmemo_display.h"
 
+/* Add getopt_long function to parse command line args */
+#include "getopt.h"
 
 #ifdef _WIN32
 int     argc = 0;
@@ -50,32 +52,32 @@ char    *argv[128];
 #ifdef _WIN32
 void explode_args_win32(char *command_line)
 {
-    char    *pos;
+  char    *pos;
     
-    argc = 1;
-    argv[0] = (char *)malloc(1);
-    argv[0][0] = '\0';
-    while (command_line != NULL)
+  argc = 1;
+  argv[0] = (char *)malloc(1);
+  argv[0][0] = '\0';
+  while (command_line != NULL)
     {
-        if (command_line[0] == '\0')
-            return;
-        pos = strchr(command_line, ' ');
-        if (pos == NULL)
+      if (command_line[0] == '\0')
+        return;
+      pos = strchr(command_line, ' ');
+      if (pos == NULL)
         {
-            argv[argc] = (char *)malloc(strlen(command_line)+1);
-            strcpy(argv[argc], command_line);
-            argc++;
-            command_line = NULL;
+          argv[argc] = (char *)malloc(strlen(command_line)+1);
+          strcpy(argv[argc], command_line);
+          argc++;
+          command_line = NULL;
         }
-        else
+      else
         {
-            pos[0] = '\0';
-            argv[argc] = (char *)malloc(strlen(command_line)+1);
-            strcpy(argv[argc], command_line);
-            argc++;
-            command_line = pos+1;
-            while (command_line[0] == ' ')
-                command_line++;
+          pos[0] = '\0';
+          argv[argc] = (char *)malloc(strlen(command_line)+1);
+          strcpy(argv[argc], command_line);
+          argc++;
+          command_line = pos+1;
+          while (command_line[0] == ' ')
+            command_line++;
         }
     }
 }
@@ -84,76 +86,110 @@ void explode_args_win32(char *command_line)
 /*
  * gmemo_parse_args: parse command line args
  */
-
 void gmemo_parse_args(int argc, char *argv[])
 {
-    int     i;
-    
-    for (i = 1; i < argc; i++)
+
+  int c;
+
+  while (1)
     {
-        if ( (strcmp(argv[i], "-d") == 0) || (strcmp(argv[i], "--daemon") == 0) )
+
+      /* getopt_long stores the option index here. */
+      int option_index = 0;
+
+
+      /* Availeable options */
+      static struct option long_options[] =
         {
-            gmemo_daemon = TRUE;
-        }
-        else if ( (strcmp(argv[i], "-h") == 0) || (strcmp(argv[i], "--help") == 0) )
+          {"daemon", no_argument, 0, 'd'},
+          {"help",   no_argument, 0, 'h'},
+          {"licence", no_argument, 0, 'l'},
+          {"quiet", no_argument, 0,'q'},
+          {"seconds", no_argument, 0,'s'},
+          {"verbose",no_argument,0,'v'},
+          {"withdrawn",no_argument,0,'w'},
+          {0, 0, 0, 0}
+        };
+
+      c = getopt_long (argc, argv, "dhlqsvw",
+                       long_options, &option_index);
+
+      /* Detect the end of the options. */
+      if (c == -1)
+        break;
+
+      switch (c)
         {
-            gmemo_display_usage();
-            gmemo_exit(0);
-        }
-        else if ( (strcmp(argv[i], "-l") == 0) || (strcmp(argv[i], "--licence") == 0) )
-        {
-            gmemo_display_licence();
-            gmemo_exit(0);
-        }
-        else if ( (strcmp(argv[i], "-q") == 0) || (strcmp(argv[i], "--quiet") == 0) )
-        {
-            gmemo_quiet = TRUE;
-        }
-        else if ( (strcmp(argv[i], "-s") == 0) || (strcmp(argv[i], "--seconds") == 0) )
-        {
-            gmemo_display_seconds = TRUE;
-        }
-        else if ( (strcmp(argv[i], "-v") == 0) || (strcmp(argv[i], "--verbose") == 0) )
-        {
-            gmemo_verbose = TRUE;
-        }
-        else if ( (strcmp(argv[i], "-w") == 0) || (strcmp(argv[i], "--withdrawn") == 0) )
-        {
-            gmemo_withdrawn = TRUE;
-        }
-        else
-        {
-            GMEMO_WARNING("parsing command line: unknown parameter '%s', ignored", argv[i]);
+
+        case 'd':
+          gmemo_daemon = TRUE;
+          break;
+
+        case 'h':
+          gmemo_display_usage();
+          gmemo_exit(0);
+          break;
+
+        case 'l':
+          gmemo_display_licence();
+          gmemo_exit(0);
+          break;
+
+        case 'q':
+          gmemo_quiet = TRUE;
+          break;
+
+        case 's':
+          gmemo_display_seconds = TRUE;
+          break;
+
+        case 'v':
+          gmemo_verbose = TRUE;
+          break;
+
+        case 'w':
+          gmemo_withdrawn = TRUE;
+          break;
+
+        case '?':
+          /* getopt_long already printed an error message. */
+          break;
+
+        default:
+          abort ();
+
         }
     }
-    
-    if (gmemo_daemon && gmemo_withdrawn)
+
+  if (gmemo_daemon && gmemo_withdrawn)
     {
-        GMEMO_ERROR("daemon and withdrawn are incompatible options");
-        gmemo_exit(1);
+      GMEMO_ERROR("daemon and withdrawn are incompatible options");
+      gmemo_exit(1);
     }
     
-    if (gmemo_win_width == -1)
-        gmemo_win_width = (gmemo_withdrawn) ? 64 : 220;
-    if (gmemo_win_height == -1)
-        gmemo_win_height = (gmemo_withdrawn) ? 64 : 48;
+  if (gmemo_win_width == -1)
+    gmemo_win_width = (gmemo_withdrawn) ? 64 : 220;
+  if (gmemo_win_height == -1)
+    gmemo_win_height = (gmemo_withdrawn) ? 64 : 48;
     
-    if (gmemo_verbose)
+  if (gmemo_verbose)
     {
-        GMEMO_MESSAGE("finished parsing command line. Results below :");
-        GMEMO_MESSAGE("application type is %s", (gmemo_daemon) ? "daemon" : ((gmemo_withdrawn) ? "withdrawn" : "gtk"));
-        GMEMO_MESSAGE("using display '%s'", gmemo_display);
-        GMEMO_MESSAGE("window width  = %d", gmemo_win_width);
-        GMEMO_MESSAGE("window height = %d", gmemo_win_height);
-        GMEMO_MESSAGE("digits size   = %d\n", gmemo_size_digits);
+      GMEMO_MESSAGE("finished parsing command line. Results below :");
+      GMEMO_MESSAGE("application type is %s", (gmemo_daemon) ? "daemon" : ((gmemo_withdrawn) ? "withdrawn" : "gtk"));
+      GMEMO_MESSAGE("using display '%s'", gmemo_display);
+      GMEMO_MESSAGE("window width  = %d", gmemo_win_width);
+      GMEMO_MESSAGE("window height = %d", gmemo_win_height);
+      GMEMO_MESSAGE("digits size   = %d\n", gmemo_size_digits);
     }
     
-    if (gmemo_withdrawn)
+  if (gmemo_withdrawn)
     {
-        GMEMO_ERROR("window maker stuff not developed !");
-        gmemo_exit(1);
+      GMEMO_ERROR("window maker stuff not developed !");
+      gmemo_exit(1);
     }
+
 }
+
 
 /*
  * main: main function for gmemo (except for Gnome applet)
@@ -162,38 +198,38 @@ void gmemo_parse_args(int argc, char *argv[])
 #ifdef _WIN32
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR szCmdLine, int iCmdShow)
 #else
-int main (int argc, char *argv[])
+     int main (int argc, char *argv[])
 #endif
 {
-    // gtk2.0: gdk_draw_layout () et pango_layout_new pour faire le layout...
+  // gtk2.0: gdk_draw_layout () et pango_layout_new pour faire le layout...
 
-    // Initialize the i18n stuff
-    //bindtextdomain (PACKAGE, GNOMELOCALEDIR);
-    //textdomain (PACKAGE);
+  // Initialize the i18n stuff
+  //bindtextdomain (PACKAGE, GNOMELOCALEDIR);
+  //textdomain (PACKAGE);
     
-    #ifdef _WIN32
-    explode_args_win32(szCmdLine);
-    gtk_init(NULL, NULL);
-    #else
-    gtk_init(&argc, &argv);
-    #endif
+#ifdef _WIN32
+  explode_args_win32(szCmdLine);
+  gtk_init(NULL, NULL);
+#else
+  gtk_init(&argc, &argv);
+#endif
     
-    gmemo_init();
-    gmemo_parse_args(argc, argv);
+  gmemo_init();
+  gmemo_parse_args(argc, argv);
     
-    load_feasts();
-    memos = NULL;
-    load_memos();
-    /*if (!save_memos())
-        GMEMO_WARNING("error saving memos file");*/
+  load_feasts();
+  memos = NULL;
+  load_memos();
+  /*if (!save_memos())
+    GMEMO_WARNING("error saving memos file");*/
     
-    #ifndef WIN32
-    signal(SIGUSR1, signal_usr1);
-    #endif
+#ifndef WIN32
+  signal(SIGUSR1, signal_usr1);
+#endif
     
-    gmemo_create_window(argc, argv);
+  gmemo_create_window(argc, argv);
     
-    gtk_main();
+  gtk_main();
     
-    return 0;
+  return 0;
 }
