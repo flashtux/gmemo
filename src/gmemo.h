@@ -24,8 +24,8 @@
 #include <gtk/gtk.h>
 
 #include <stdio.h>
-#include <locale.h>
-#include <libintl.h>
+/* #include <locale.h> */
+/* #include <libintl.h> */
 
 #define PACKAGE "gmemo"
 #define _(string) gettext(string)

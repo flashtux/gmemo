@@ -201,9 +201,9 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR szCmdLine,
      int main (int argc, char *argv[])
 #endif
 {
-    setlocale (LC_ALL, "");
-    bindtextdomain (PACKAGE, "/usr/share/locale");
-    textdomain (PACKAGE);
+/*     setlocale (LC_ALL, ""); */
+/*     bindtextdomain (PACKAGE, "/usr/share/locale"); */
+/*     textdomain (PACKAGE); */
     
 #ifdef _WIN32
   explode_args_win32(szCmdLine);

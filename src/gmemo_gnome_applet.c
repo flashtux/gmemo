@@ -113,7 +113,7 @@ static const char gmemo_menu_xml[] =
 static gboolean
 gmemo_applet_new(PanelApplet *applet)
 {
-    int     i = 123;
+/*     int     i = 123; */
     
     gmemo_init();
     gmemo_win_width = 220;
