@@ -1,0 +1,25 @@
+Gmemo TODO
+FlashCode, 2003-05-27
+
+Legend:
+# done
++ currently in development
+- pending
+? is this really necessary?
+
+
+v0.1.x:
++ display date/time, feasts (gtk)
+- display date/time, feasts (wmaker)
+# load/save memos
+# win32 version
+# remove Dos window (win32)
+# calculation with memos (date/time, repeat, ...)
++ display memos & alarms
+- improve ./configure (check for missing libraries)
+- internationalization (gettext)
+
+Future versions:
+- gtk tool for editing memos
+? php tool for editing memos
+? memos synchronization with distant host

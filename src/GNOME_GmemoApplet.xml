@@ -1,0 +1,10 @@
+<Root>
+  <popups>
+    <popup name="mon_bouton">
+      <menuitem name="Edition memos" verb="Edition" _label="Edition memos..."/>
+      <menuitem name="Check!!!"      verb="Check"   _label="Check"     type="toggle"/>
+      <menuitem name="Aide"          verb="Help"    _label="Help"     pixtype="stock" pixname="gtk-help"/>
+      <menuitem name="A propos"      verb="About"   _label="A propos..." pixtype="stock" pixname="gnome-stock-about"/>
+    </popup>
+  </popups>
+</Root>

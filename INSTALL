@@ -1,0 +1,60 @@
+1. PRE-REQUISITES
+=================
+
+For Linux version :
+    - GCC compiler (gcc) and make tools
+    - Gtk+ 2.0 libraries & headers
+    - Libxml2 (provided with Gnome)
+
+For Windows version :
+    - Mingw compiler, installed in C:\mingw (http://www.mingw.org)
+    - Gtk+ 2.0 libraries & headers (http://www.gimp.org/~tml/gimp/win32)
+    - Libxml2 (http://www.libxml.org)
+
+
+2. COMPILATION
+==============
+
+Linux/GTK :
+
+    ./configure
+    make
+
+Linux/Gnome :
+
+    cd src
+    make -f Makefile.gnome
+
+Windows :
+    cd src
+    m.bat
+
+
+3. INSTALLATION
+===============
+
+make install
+
+Create .gmemo directory in your home :
+
+mkdir ~/.gmemo
+
+Copy feasts & memos :
+
+cp gmemo_feasts.xml ~/.gmemo/
+cp gmemo.xml ~/.gmemo/
+
+
+4. RUNNING GMEMO
+================
+
+Getting help under Linux :
+./gmemo --help
+
+Getting help under Win32 :
+not yet developed
+
+
+=========================================================================
+(c) 2003 by FlashCode <flashcode@flashtux.org>
+http://gmemo.flashtux.org

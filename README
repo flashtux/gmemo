@@ -1,0 +1,22 @@
+INTRODUCTION
+============
+
+GMEMO is a small applet to remember everything !
+Runs with Gtk+ 2, Gnome, Window Maker / Fluxbox and Win32
+
+
+INSTALLATION
+============
+
+See INSTALL file.
+
+
+TROUBLESHOOTING
+===============
+
+See FAQ file.
+    
+
+=========================================================================
+(c) 2003 by FlashCode <flashcode@flashtux.org>
+http://gmemo.flashtux.org

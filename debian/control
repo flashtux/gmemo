@@ -1,0 +1,15 @@
+Source: gmemo
+Section: x11
+Priority: optional
+Maintainer: FlashCode <flashcode@flashtux.org>
+Build-Depends: debhelper (>> 4.0.0)
+Standards-Version: 3.5.8
+
+Package: gmemo
+Architecture: any
+Depends: ${shlibs:Depends}
+Description: memo applet for window maker or gnome panel
+ gmemo is an applet which reminds you birthday, feast (with first name,
+ Mother's day, ...) or any other event (customizable : name, type, date and
+ time, repeat mode, multi-alarm mode...).
+ Moreover, gmemo displays date, time and feast.

@@ -1,0 +1,1 @@
+shlibs:Depends=libatk1.0-0 (>= 1.2.3), libc6 (>= 2.3.1-1), libesd0 (>= 0.2.29-1) | libesd-alsa0 (>= 0.2.29-1), libglib2.0-0 (>= 2.2.1), libgnome2-0 (>= 2.1.90), libgnomeui-0 (>= 2.1.90), libgtk2.0-0 (>= 2.2.1), libpanel-applet2-0 (>= 2.0.0), libpango1.0-0 (>= 1.2.1), libxml2 (>= 2.5.0-1), xlibs (>> 4.1.0)

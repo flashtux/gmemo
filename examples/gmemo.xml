@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<gmemo>
+  <memo>
+    <title>Meeting</title>
+    <message>
+Meeting tomorrow at 10:00 with Mr Dupont.
+Place : Paris, Trocadero.
+    </message>
+    <alarm date="2004/01/01" time="09:00"/>
+    <repeat unit="sec" interval="30"/>
+    <sound file="/dosd/wav/redalert.au" repeat="3" delay="500"/>
+    <exec cmd="/tmp/toto123"/>
+  </memo>
+  <memo>
+    <title>memo 2</title>
+    <message>memo 2</message>
+    <alarm date="2004/01/10" time="17:45"/>
+    <repeat unit="min" interval="1"/>
+  </memo>
+</gmemo>

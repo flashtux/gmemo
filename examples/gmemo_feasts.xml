@@ -1,0 +1,369 @@
+<?xml version="1.0"?>
+<feasts>
+  <feast date="01/01" type="F" name="Marie - JOUR de l'AN"/>
+  <feast date="01/02" type="M" name="Basile"/>
+  <feast date="01/03" type="F" name="Genevieve"/>
+  <feast date="01/04" type="M" name="Odilon"/>
+  <feast date="01/05" type="M" name="Edouard"/>
+  <feast date="01/06" type="M" name="Melaine"/>
+  <feast date="01/07" type="M" name="Raymond"/>
+  <feast date="01/08" type="M" name="Lucien"/>
+  <feast date="01/09" type="F" name="Alix"/>
+  <feast date="01/10" type="M" name="Guillaume"/>
+  <feast date="01/11" type="M" name="Paulin"/>
+  <feast date="01/12" type="F" name="Tatiana"/>
+  <feast date="01/13" type="F" name="Yvette"/>
+  <feast date="01/14" type="F" name="Nina"/>
+  <feast date="01/15" type="M" name="Remi"/>
+  <feast date="01/16" type="M" name="Marcel"/>
+  <feast date="01/17" type="F" name="Roseline"/>
+  <feast date="01/18" type="F" name="Prisca"/>
+  <feast date="01/19" type="M" name="Marius"/>
+  <feast date="01/20" type="M" name="Sebastien"/>
+  <feast date="01/21" type="F" name="Agnes"/>
+  <feast date="01/22" type="M" name="Vincent"/>
+  <feast date="01/23" type="M" name="Barnard"/>
+  <feast date="01/24" type="M" name="Francois de Sales"/>
+  <feast date="01/25" type="-" name="Conversion de St Paul"/>
+  <feast date="01/26" type="F" name="Paule"/>
+  <feast date="01/27" type="F" name="Angele"/>
+  <feast date="01/28" type="M" name="Thomas d'Aquin"/>
+  <feast date="01/29" type="M" name="Gildas"/>
+  <feast date="01/30" type="F" name="Martine"/>
+  <feast date="01/31" type="F" name="Marcelle"/>
+  <feast date="02/01" type="F" name="Ella"/>
+  <feast date="02/02" type="-" name="Presentation"/>
+  <feast date="02/03" type="M" name="Blaise"/>
+  <feast date="02/04" type="F" name="Veronique"/>
+  <feast date="02/05" type="F" name="Agathe"/>
+  <feast date="02/06" type="M" name="Gaston"/>
+  <feast date="02/07" type="F" name="Eugenie"/>
+  <feast date="02/08" type="F" name="Jacqueline"/>
+  <feast date="02/09" type="F" name="Apolline"/>
+  <feast date="02/10" type="M" name="Arnaud"/>
+  <feast date="02/11" type="-" name="Notre-Dame de Lourdes"/>
+  <feast date="02/12" type="M" name="Felix"/>
+  <feast date="02/13" type="F" name="Beatrice"/>
+  <feast date="02/14" type="M" name="Valentin"/>
+  <feast date="02/15" type="M" name="Claude"/>
+  <feast date="02/16" type="F" name="Julienne"/>
+  <feast date="02/17" type="M" name="Alexis"/>
+  <feast date="02/18" type="F" name="Bernadette"/>
+  <feast date="02/19" type="M" name="Gabin"/>
+  <feast date="02/20" type="F" name="Aimee"/>
+  <feast date="02/21" type="M" name="Pierre Damien"/>
+  <feast date="02/22" type="F" name="Isabelle"/>
+  <feast date="02/23" type="M" name="Lazare"/>
+  <feast date="02/24" type="M" name="Modeste"/>
+  <feast date="02/25" type="M" name="Romeo"/>
+  <feast date="02/26" type="M" name="Nestor"/>
+  <feast date="02/27" type="F" name="Honorine"/>
+  <feast date="02/28" type="M" name="Romain"/>
+  <feast date="02/29" type="M" name="Auguste"/>
+  <feast date="03/01" type="M" name="Aubin"/>
+  <feast date="03/02" type="M" name="Charles le Bon"/>
+  <feast date="03/03" type="M" name="Guenole"/>
+  <feast date="03/04" type="M" name="Casimir"/>
+  <feast date="03/05" type="M" name="Olive"/>
+  <feast date="03/06" type="M" name="Colette"/>
+  <feast date="03/07" type="F" name="Felicite"/>
+  <feast date="03/08" type="M" name="Jean de Dieu"/>
+  <feast date="03/09" type="F" name="Francoise"/>
+  <feast date="03/10" type="M" name="Vivien"/>
+  <feast date="03/11" type="F" name="Rosine"/>
+  <feast date="03/12" type="F" name="Justine"/>
+  <feast date="03/13" type="M" name="Rodrigue"/>
+  <feast date="03/14" type="F" name="Mathilde"/>
+  <feast date="03/15" type="F" name="Louise de Marillac"/>
+  <feast date="03/16" type="F" name="Benedicte"/>
+  <feast date="03/17" type="M" name="Patrice"/>
+  <feast date="03/18" type="M" name="Cyrille"/>
+  <feast date="03/19" type="M" name="Joseph"/>
+  <feast date="03/20" type="M" name="Herbert"/>
+  <feast date="03/21" type="F" name="Clemence"/>
+  <feast date="03/22" type="F" name="Lea"/>
+  <feast date="03/23" type="M" name="Victorien"/>
+  <feast date="03/24" type="F" name="Catherine de Suede"/>
+  <feast date="03/25" type="-" name="Annonciation"/>
+  <feast date="03/26" type="F" name="Larissa"/>
+  <feast date="03/27" type="M" name="Habib"/>
+  <feast date="03/28" type="M" name="Gontran"/>
+  <feast date="03/29" type="F" name="Gwladys"/>
+  <feast date="03/30" type="M" name="Amedee"/>
+  <feast date="03/31" type="M" name="Benjamin"/>
+  <feast date="04/01" type="M" name="Hugues"/>
+  <feast date="04/02" type="F" name="Sandrine"/>
+  <feast date="04/03" type="M" name="Richard"/>
+  <feast date="04/04" type="M" name="Isodore"/>
+  <feast date="04/05" type="F" name="Irene"/>
+  <feast date="04/06" type="M" name="Marcellin"/>
+  <feast date="04/07" type="M" name="Jean-Baptiste de la Salle"/>
+  <feast date="04/08" type="F" name="Julie"/>
+  <feast date="04/09" type="M" name="Gautier"/>
+  <feast date="04/10" type="M" name="Fulbert"/>
+  <feast date="04/11" type="M" name="Stanislas"/>
+  <feast date="04/12" type="M" name="Jules"/>
+  <feast date="04/13" type="F" name="Ida"/>
+  <feast date="04/14" type="M" name="Maxime"/>
+  <feast date="04/15" type="M" name="Paterne"/>
+  <feast date="04/16" type="M" name="Benoit-Joseph Labre"/>
+  <feast date="04/17" type="M" name="Anicet"/>
+  <feast date="04/18" type="M" name="Parfait"/>
+  <feast date="04/19" type="F" name="Emma"/>
+  <feast date="04/20" type="F" name="Odette"/>
+  <feast date="04/21" type="M" name="Anselme"/>
+  <feast date="04/22" type="M" name="Alexandre"/>
+  <feast date="04/23" type="M" name="Georges"/>
+  <feast date="04/24" type="M" name="Fidele"/>
+  <feast date="04/25" type="M" name="Marc"/>
+  <feast date="04/26" type="F" name="Alida"/>
+  <feast date="04/27" type="F" name="Zita"/>
+  <feast date="04/28" type="F" name="Valerie"/>
+  <feast date="04/29" type="F" name="Catherine de Sienne"/>
+  <feast date="04/30" type="M" name="Robert"/>
+  <feast date="05/01" type="M" name="Jeremie - FETE du TRAVAIL"/>
+  <feast date="05/02" type="M" name="Boris"/>
+  <feast date="05/03" type="M" name="Philippe+Jacques"/>
+  <feast date="05/04" type="M" name="Sylvain"/>
+  <feast date="05/05" type="F" name="Judith"/>
+  <feast date="05/06" type="F" name="Prudence"/>
+  <feast date="05/07" type="F" name="Gisele"/>
+  <feast date="05/08" type="M" name="Desire - ANNIVERSAIRE 1945"/>
+  <feast date="05/09" type="M" name="Pacome"/>
+  <feast date="05/10" type="F" name="Solange"/>
+  <feast date="05/11" type="F" name="Estelle"/>
+  <feast date="05/12" type="M" name="Achille"/>
+  <feast date="05/13" type="F" name="Rolande"/>
+  <feast date="05/14" type="M" name="Mathias"/>
+  <feast date="05/15" type="F" name="Denise"/>
+  <feast date="05/16" type="M" name="Honore"/>
+  <feast date="05/17" type="M" name="Pascal"/>
+  <feast date="05/18" type="M" name="Eric"/>
+  <feast date="05/19" type="M" name="Yves"/>
+  <feast date="05/20" type="M" name="Bernardin"/>
+  <feast date="05/21" type="M" name="Constantin"/>
+  <feast date="05/22" type="M" name="Emile"/>
+  <feast date="05/23" type="M" name="Didier"/>
+  <feast date="05/24" type="M" name="Donatien"/>
+  <feast date="05/25" type="F" name="Sophie"/>
+  <feast date="05/26" type="M" name="Berenger"/>
+  <feast date="05/27" type="M" name="Augustin"/>
+  <feast date="05/28" type="M" name="Germain"/>
+  <feast date="05/29" type="M" name="Aymar"/>
+  <feast date="05/30" type="M" name="Ferdinand"/>
+  <feast date="05/31" type="-" name="Visitation"/>
+  <feast date="06/01" type="M" name="Justin"/>
+  <feast date="06/02" type="F" name="Blandine"/>
+  <feast date="06/03" type="M" name="Kevin"/>
+  <feast date="06/04" type="F" name="Clotilde"/>
+  <feast date="06/05" type="M" name="Igor"/>
+  <feast date="06/06" type="M" name="Norbert"/>
+  <feast date="06/07" type="M" name="Gilbert"/>
+  <feast date="06/08" type="M" name="Medard"/>
+  <feast date="06/09" type="F" name="Diane"/>
+  <feast date="06/10" type="M" name="Landry"/>
+  <feast date="06/11" type="M" name="Barnabe"/>
+  <feast date="06/12" type="M" name="Guy"/>
+  <feast date="06/13" type="M" name="Antoine de Padoue"/>
+  <feast date="06/14" type="M" name="Elisee"/>
+  <feast date="06/15" type="F" name="Germaine"/>
+  <feast date="06/16" type="M" name="Jean-Francois Regis"/>
+  <feast date="06/17" type="M" name="Herve"/>
+  <feast date="06/18" type="M" name="Leonce"/>
+  <feast date="06/19" type="M" name="Romuald"/>
+  <feast date="06/20" type="M" name="Silvere"/>
+  <feast date="06/21" type="M" name="Rodolphe"/>
+  <feast date="06/22" type="M" name="Alban"/>
+  <feast date="06/23" type="F" name="Audrey"/>
+  <feast date="06/24" type="M" name="Jean-Baptiste"/>
+  <feast date="06/25" type="M" name="Salomon"/>
+  <feast date="06/26" type="M" name="Anthelme"/>
+  <feast date="06/27" type="M" name="Fernand"/>
+  <feast date="06/28" type="M" name="Irenee"/>
+  <feast date="06/29" type="M" name="Pierre+Paul"/>
+  <feast date="06/30" type="M" name="Martial"/>
+  <feast date="07/01" type="M" name="Thierry"/>
+  <feast date="07/02" type="M" name="Martinien"/>
+  <feast date="07/03" type="M" name="Thomas"/>
+  <feast date="07/04" type="M" name="Florent"/>
+  <feast date="07/05" type="M" name="Antoine"/>
+  <feast date="07/06" type="F" name="Mariette"/>
+  <feast date="07/07" type="M" name="Raoul"/>
+  <feast date="07/08" type="M" name="Thibaut"/>
+  <feast date="07/09" type="F" name="Amandine"/>
+  <feast date="07/10" type="M" name="Ulrich"/>
+  <feast date="07/11" type="M" name="Benoit"/>
+  <feast date="07/12" type="M" name="Olivier"/>
+  <feast date="07/13" type="M" name="Henri+Joel"/>
+  <feast date="07/14" type="F" name="Camille - FETE NATIONALE"/>
+  <feast date="07/15" type="M" name="Donald"/>
+  <feast date="07/16" type="-" name="N.D. du Mont Carmel"/>
+  <feast date="07/17" type="F" name="Charlotte"/>
+  <feast date="07/18" type="M" name="Frederic"/>
+  <feast date="07/19" type="M" name="Arsene"/>
+  <feast date="07/20" type="F" name="Marina"/>
+  <feast date="07/21" type="M" name="Victor"/>
+  <feast date="07/22" type="F" name="Marie-Madeleine"/>
+  <feast date="07/23" type="F" name="Brigitte"/>
+  <feast date="07/24" type="F" name="Christine"/>
+  <feast date="07/25" type="M" name="Jacques"/>
+  <feast date="07/26" type="M" name="Anne"/>
+  <feast date="07/27" type="F" name="Nathalie"/>
+  <feast date="07/28" type="M" name="Samson"/>
+  <feast date="07/29" type="F" name="Marthe"/>
+  <feast date="07/30" type="F" name="Juliette"/>
+  <feast date="07/31" type="M" name="Ignace de Loyola"/>
+  <feast date="08/01" type="M" name="Alphonse"/>
+  <feast date="08/02" type="M" name="Julien"/>
+  <feast date="08/03" type="F" name="Lydie"/>
+  <feast date="08/04" type="M" name="Jean-Marie Vianney"/>
+  <feast date="08/05" type="M" name="Abel"/>
+  <feast date="08/06" type="-" name="Transfiguration"/>
+  <feast date="08/07" type="M" name="Gaetan"/>
+  <feast date="08/08" type="M" name="Dominique"/>
+  <feast date="08/09" type="M" name="Amour"/>
+  <feast date="08/10" type="M" name="Laurent"/>
+  <feast date="08/11" type="F" name="Claire"/>
+  <feast date="08/12" type="F" name="Clarisse"/>
+  <feast date="08/13" type="M" name="Hippolyte"/>
+  <feast date="08/14" type="M" name="Evrard"/>
+  <feast date="08/15" type="F" name="Marie - ASSOMPTION"/>
+  <feast date="08/16" type="M" name="Armel"/>
+  <feast date="08/17" type="M" name="Hyacinthe"/>
+  <feast date="08/18" type="F" name="Helene"/>
+  <feast date="08/19" type="M" name="Jean Eudes"/>
+  <feast date="08/20" type="M" name="Bernard"/>
+  <feast date="08/21" type="M" name="Christophe"/>
+  <feast date="08/22" type="M" name="Fabrice"/>
+  <feast date="08/23" type="F" name="Rose de Lima"/>
+  <feast date="08/24" type="M" name="Barthelemy"/>
+  <feast date="08/25" type="M" name="Louis"/>
+  <feast date="08/26" type="F" name="Natacha"/>
+  <feast date="08/27" type="F" name="Monique"/>
+  <feast date="08/28" type="M" name="Augustin"/>
+  <feast date="08/29" type="F" name="Sabine"/>
+  <feast date="08/30" type="M" name="Fiacre"/>
+  <feast date="08/31" type="M" name="Aristide"/>
+  <feast date="09/01" type="M" name="Gilles"/>
+  <feast date="09/02" type="F" name="Ingrid"/>
+  <feast date="09/03" type="M" name="Gregoire"/>
+  <feast date="09/04" type="F" name="Rosalie"/>
+  <feast date="09/05" type="F" name="Raissa"/>
+  <feast date="09/06" type="M" name="Bertrand"/>
+  <feast date="09/07" type="F" name="Reine"/>
+  <feast date="09/08" type="-" name="Nativite de Marie"/>
+  <feast date="09/09" type="M" name="Alain"/>
+  <feast date="09/10" type="F" name="Ines"/>
+  <feast date="09/11" type="M" name="Adelphe"/>
+  <feast date="09/12" type="M" name="Apollinaire"/>
+  <feast date="09/13" type="M" name="Aime"/>
+  <feast date="09/14" type="-" name="La Ste Croix"/>
+  <feast date="09/15" type="M" name="Roland"/>
+  <feast date="09/16" type="F" name="Edith"/>
+  <feast date="09/17" type="M" name="Renaud"/>
+  <feast date="09/18" type="F" name="Nadege"/>
+  <feast date="09/19" type="F" name="Emilie"/>
+  <feast date="09/20" type="M" name="Davy"/>
+  <feast date="09/21" type="M" name="Matthieu"/>
+  <feast date="09/22" type="M" name="Maurice"/>
+  <feast date="09/23" type="M" name="Constant"/>
+  <feast date="09/24" type="F" name="Thecle"/>
+  <feast date="09/25" type="M" name="Hermann"/>
+  <feast date="09/26" type="M" name="Come+Damien"/>
+  <feast date="09/27" type="M" name="Vincent de Paul"/>
+  <feast date="09/28" type="M" name="Venceslas"/>
+  <feast date="09/29" type="M" name="Michel+Gabriel"/>
+  <feast date="09/30" type="M" name="Jerome"/>
+  <feast date="10/01" type="F" name="Therese de l'Enfant Jesus"/>
+  <feast date="10/02" type="M" name="Leger"/>
+  <feast date="10/03" type="M" name="Gerard"/>
+  <feast date="10/04" type="M" name="Francois d'Assise"/>
+  <feast date="10/05" type="F" name="Fleur"/>
+  <feast date="10/06" type="M" name="Bruno"/>
+  <feast date="10/07" type="M" name="Serge"/>
+  <feast date="10/08" type="F" name="Pelagie"/>
+  <feast date="10/09" type="M" name="Denis"/>
+  <feast date="10/10" type="M" name="Ghislain"/>
+  <feast date="10/11" type="M" name="Firmin"/>
+  <feast date="10/12" type="M" name="Wilfried"/>
+  <feast date="10/13" type="M" name="Geraud"/>
+  <feast date="10/14" type="M" name="Juste"/>
+  <feast date="10/15" type="F" name="Therese d'Avila"/>
+  <feast date="10/16" type="F" name="Edwige"/>
+  <feast date="10/17" type="M" name="Baudouin"/>
+  <feast date="10/18" type="M" name="Luc"/>
+  <feast date="10/19" type="M" name="Rene"/>
+  <feast date="10/20" type="F" name="Adeline"/>
+  <feast date="10/21" type="F" name="Celine"/>
+  <feast date="10/22" type="F" name="Elodie"/>
+  <feast date="10/23" type="M" name="Jean de Capistran"/>
+  <feast date="10/24" type="M" name="Florentin"/>
+  <feast date="10/25" type="M" name="Crepin"/>
+  <feast date="10/26" type="M" name="Dimitri"/>
+  <feast date="10/27" type="F" name="Emeline"/>
+  <feast date="10/28" type="M" name="Simon+Jude"/>
+  <feast date="10/29" type="M" name="Narcisse"/>
+  <feast date="10/30" type="F" name="Bienvenue"/>
+  <feast date="10/31" type="M" name="Quentin"/>
+  <feast date="11/01" type="M" name="Harold - TOUSSAINT"/>
+  <feast date="11/02" type="-" name="Defunts"/>
+  <feast date="11/03" type="M" name="Hubert"/>
+  <feast date="11/04" type="M" name="Charles"/>
+  <feast date="11/05" type="F" name="Sylvie"/>
+  <feast date="11/06" type="F" name="Bertille"/>
+  <feast date="11/07" type="F" name="Carine"/>
+  <feast date="11/08" type="M" name="Geoffroy"/>
+  <feast date="11/09" type="M" name="Theodore"/>
+  <feast date="11/10" type="M" name="Leon"/>
+  <feast date="11/11" type="M" name="Martin - ARMISTICE 1918"/>
+  <feast date="11/12" type="M" name="Christian"/>
+  <feast date="11/13" type="M" name="Brice"/>
+  <feast date="11/14" type="M" name="Sidoine"/>
+  <feast date="11/15" type="M" name="Albert"/>
+  <feast date="11/16" type="F" name="Marguerite"/>
+  <feast date="11/17" type="F" name="Elisabeth"/>
+  <feast date="11/18" type="F" name="Aude"/>
+  <feast date="11/19" type="M" name="Tanguy"/>
+  <feast date="11/20" type="M" name="Edmond"/>
+  <feast date="11/21" type="-" name="Presentation de Marie"/>
+  <feast date="11/22" type="F" name="Cecile"/>
+  <feast date="11/23" type="M" name="Clement"/>
+  <feast date="11/24" type="F" name="Flora"/>
+  <feast date="11/25" type="F" name="Catherine"/>
+  <feast date="11/26" type="F" name="Delphine"/>
+  <feast date="11/27" type="M" name="Severin"/>
+  <feast date="11/28" type="M" name="Jacques de la Marche"/>
+  <feast date="11/29" type="M" name="Saturnin"/>
+  <feast date="11/30" type="M" name="Andre"/>
+  <feast date="12/01" type="F" name="Florence"/>
+  <feast date="12/02" type="F" name="Viviane"/>
+  <feast date="12/03" type="M" name="Xavier"/>
+  <feast date="12/04" type="F" name="Barbara"/>
+  <feast date="12/05" type="M" name="Gerald"/>
+  <feast date="12/06" type="M" name="Nicolas"/>
+  <feast date="12/07" type="M" name="Ambroise"/>
+  <feast date="12/08" type="-" name="Immaculee Conception"/>
+  <feast date="12/09" type="M" name="Pierre Fourier"/>
+  <feast date="12/10" type="M" name="Romaric"/>
+  <feast date="12/11" type="M" name="Daniel"/>
+  <feast date="12/12" type="F" name="Jeanne de Chantal"/>
+  <feast date="12/13" type="F" name="Lucie"/>
+  <feast date="12/14" type="F" name="Odile"/>
+  <feast date="12/15" type="F" name="Ninon"/>
+  <feast date="12/16" type="F" name="Alice"/>
+  <feast date="12/17" type="M" name="Gael"/>
+  <feast date="12/18" type="M" name="Gatien"/>
+  <feast date="12/19" type="M" name="Urbain"/>
+  <feast date="12/20" type="M" name="Abraham"/>
+  <feast date="12/21" type="M" name="Pierre Canisius"/>
+  <feast date="12/22" type="F" name="Francoise-Xavier"/>
+  <feast date="12/23" type="M" name="Armand"/>
+  <feast date="12/24" type="F" name="Adele"/>
+  <feast date="12/25" type="M" name="Emmanuel - NOEL"/>
+  <feast date="12/26" type="M" name="Etienne"/>
+  <feast date="12/27" type="M" name="Jean"/>
+  <feast date="12/28" type="-" name="Sts Innocents"/>
+  <feast date="12/29" type="M" name="David"/>
+  <feast date="12/30" type="M" name="Roger"/>
+  <feast date="12/31" type="M" name="Sylvestre"/>
+</feasts>

@@ -1,0 +1,26 @@
+#
+# gmemo makefile for Win32 / Mingw
+# (c) 2003/01/01 by FlashCode <flashcode@flashtux.org>
+#
+
+OPTIONS=-Wall -O2 -pipe
+DEFINES=-DHAVE_CONFIG_H
+
+OUTPUT_GTK=gmemo
+
+OBJS=gmemo.o gmemo_main.o gmemo_feast.o gmemo_memo.o gmemo_loadsave.o gmemo_display.o
+
+gtk: $(OBJS)
+	gcc -o $(OUTPUT_GTK) $(OBJS) $(OPTIONS) -mms-bitfields -Lc:/mingw/lib -lgtk-win32-2.0 -lgdk-win32-2.0 -latk-1.0 -lgdk_pixbuf-2.0 -lpangowin32-1.0 -lgdi32 -lpango-1.0 -lgobject-2.0 -lgmodule-2.0 -lglib-2.0 -lintl -liconv -lxml2 -lwinmm -mwindows
+
+dep:
+	gcc -MM *.c >depend
+
+$(OBJS):
+	gcc $(DEFINES) $(OPTIONS) -o $@ -c $< -mms-bitfields -I.. -Ic:/mingw/include/gtk-2.0 -Ic:/mingw/lib/gtk-2.0/include -Ic:/mingw/include/atk-1.0 -Ic:/mingw/include/pango-1.0 -Ic:/mingw/include/glib-2.0 -Ic:/mingw/lib/glib-2.0/include -Ic:/mingw/include/libxml
+
+clean:
+	del *.o
+	del gmemo.exe
+
+include depend
